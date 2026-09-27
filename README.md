@@ -191,7 +191,7 @@ $$\mathbf{a} = \max\left(0,\, \mathbf{W}_{\text{in}}\mathbf{x} - \theta_{\text{s
 
 ### 2. Afferent, Lateral, and Efferent Synaptic Circuits
 
-Cortical columns in the brain are organized into three primary synaptic connectivity streams ([Mountcastle, 1997](https://doi.org/10.1093/cercor/7.5.455)):
+Cortical columns in the brain are organized into three primary synaptic connectivity streams ([Mountcastle, 1997](https://doi.org/10.1093/brain/120.4.701)):
 
 <div align="center">
 
@@ -371,7 +371,7 @@ $$\text{Selectivity Ratio} = \frac{\mathbb{E}\left[\mathbf{a}_i \mid \text{Token
 
 ### 6. Neuromorphic Computing: SynOps vs FLOPs
 
-Traditional GPUs dissipate power uniformly across all silicon cells, even when 90% of activations are zero. **Neuromorphic processors** ([Intel Loihi 2](https://doi.org/10.1109/MM.2021.3090333), [IBM TrueNorth](https://doi.org/10.1126/science.1254642), [BrainScaleS](https://doi.org/10.1109/JPROC.2014.2304638)) operate on **asynchronous event-driven spikes** — silent neurons consume **zero** dynamic energy.
+Traditional GPUs dissipate power uniformly across all silicon cells, even when 90% of activations are zero. **Neuromorphic processors** ([Intel Loihi 2](https://doi.org/10.1109/SiPS52927.2021.00053), [IBM TrueNorth](https://doi.org/10.1126/science.1254642), [BrainScaleS](https://doi.org/10.1109/JPROC.2014.2304638)) operate on **asynchronous event-driven spikes** — silent neurons consume **zero** dynamic energy.
 
 <div align="center">
 
@@ -858,8 +858,8 @@ Verifies: model tensor dimensions · non-negative biological firing constraints 
 <details open>
 <summary><b>🏛️ Cortical Microcircuitry & Columnar Architecture</b></summary>
 
-- Mountcastle, V. B. (1997). *The columnar organization of the neocortex.* Cerebral Cortex, 7(5), 455–471.
-  **[📄 DOI: 10.1093/cercor/7.5.455](https://doi.org/10.1093/cercor/7.5.455)**
+- Mountcastle, V. B. (1997). *The columnar organization of the neocortex.* Brain, 120(4), 701–722.
+  **[📄 DOI: 10.1093/brain/120.4.701](https://doi.org/10.1093/brain/120.4.701)**
 
 </details>
 
@@ -890,8 +890,8 @@ Verifies: model tensor dimensions · non-negative biological firing constraints 
 - Davies, M., et al. (2018). *Loihi: A neuromorphic manycore processor with on-chip learning.* IEEE Micro, 38(1), 82–99.
   **[📄 DOI: 10.1109/MM.2018.112130359](https://doi.org/10.1109/MM.2018.112130359)**
 
-- Orchard, G., et al. (2021). *Efficient Neuromorphic Processing with Loihi 2.* IEEE Micro, 41(6), 38–47.
-  **[📄 DOI: 10.1109/MM.2021.3090333](https://doi.org/10.1109/MM.2021.3090333)**
+- Orchard, G., et al. (2021). *Efficient Neuromorphic Signal Processing with Loihi 2.* 2021 IEEE Workshop on Signal Processing Systems (SiPS).
+  **[📄 DOI: 10.1109/SiPS52927.2021.00053](https://doi.org/10.1109/SiPS52927.2021.00053)** · **[📄 arXiv:2111.03746](https://arxiv.org/abs/2111.03746)**
 
 - Merolla, P. A., et al. (2014). *A million spiking-neuron integrated circuit with a scalable communication network and interface.* Science, 345(6197), 668–673.
   **[📄 DOI: 10.1126/science.1254642](https://doi.org/10.1126/science.1254642)**
@@ -910,7 +910,8 @@ Verifies: model tensor dimensions · non-negative biological firing constraints 
 - Ba, J. L., Kiros, J. R., & Hinton, G. E. (2016). *Layer Normalization.*
   **[📄 arXiv:1607.06450](https://arxiv.org/abs/1607.06450)**
 
-- Radford, A., et al. (2019). *Language Models are Unsupervised Multitask Learners.* OpenAI Technical Report.
+- Radford, A., Wu, J., Child, R., Luan, D., Amodei, D., & Sutskever, I. (2019). *Language Models are Unsupervised Multitask Learners.* OpenAI Technical Report.
+  **[📄 PDF](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)**
 
 </details>
 
