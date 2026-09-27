@@ -12,8 +12,9 @@
 
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/)
 [![PyTorch 2.0+](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![arXiv](https://img.shields.io/badge/arXiv-2509.26507-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2509.26507)
 [![License: MIT](https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge)](LICENSE)
-[![Architecture](https://img.shields.io/badge/Architecture-BDH%20Sparse%20Synaptic-8B5CF6?style=for-the-badge)]()
+[![Architecture](https://img.shields.io/badge/Architecture-BDH%20Sparse%20Synaptic-8B5CF6?style=for-the-badge)](https://arxiv.org/abs/2509.26507)
 
 [![Sparsity](https://img.shields.io/badge/🧠_Neuron_Sparsity-85--89%25_Silent-10B981?style=flat-square)]()
 [![Energy](https://img.shields.io/badge/⚡_Neuromorphic-9.00×_Energy_Savings-A855F7?style=flat-square)]()
@@ -27,7 +28,7 @@
 
 <br>
 
-[📖 Read the Paper](#-research-papers--academic-references) · [🚀 Quickstart](#-quickstart--reproducibility-guide) · [📊 Results](#-empirical-results--visual-gallery) · [🧠 Theory](#-neurobiological--theoretical-foundations)
+[📖 Paper (arXiv:2509.26507)](https://arxiv.org/abs/2509.26507) · [🚀 Quickstart](#-quickstart--reproducibility-guide) · [📊 Results](#-empirical-results--visual-gallery) · [🧠 Theory](#-neurobiological--theoretical-foundations) · [📚 References](#-research-papers--academic-references)
 
 </div>
 
@@ -73,10 +74,14 @@
 
 ## 🌟 Executive Summary
 
-Modern state-of-the-art Large Language Models (LLMs) rely on the standard **Transformer** architecture ([Vaswani et al., 2017](https://arxiv.org/abs/1706.03762)). Despite their empirical triumph, Transformers face fundamental limitations when compared against biological brains. **HatchlingLM** bridges this gap by introducing a **biologically grounded** neural architecture:
+Modern state-of-the-art Large Language Models (LLMs) rely on the standard **Transformer** architecture ([Vaswani et al., 2017](https://arxiv.org/abs/1706.03762)). Despite their empirical triumph, Transformers face fundamental limitations when compared against biological brains. **HatchlingLM** is inspired by and implements the **Dragon Hatchling (BDH)** architecture introduced in:
+
+> **The Dragon Hatchling: The Missing Link between the Transformer and Models of the Brain**  
+> *Adrian Kosowski, Przemysław Uznański, Jan Chorowski, Zuzanna Stamirowska, Michał Bartoszkiewicz*  
+> **arXiv:2509.26507 [cs.NE]** — [Read on arXiv](https://arxiv.org/abs/2509.26507) · [Pathway Research Blog](https://pathway.com/research/bdh) · [Reference Code](https://github.com/pathwaycom/bdh)
 
 > [!NOTE]
-> **HatchlingLM** implements biologically realistic neural assemblies capable of processing byte sequences while exhibiting emergent structural organization, dynamic synaptic working memory, and extreme computational energy efficiency — all without attention mechanisms.
+> **The Dragon Hatchling (BDH)** ([Kosowski et al., 2025](https://arxiv.org/abs/2509.26507)) demonstrates that biologically realistic neural networks—featuring uniform, scale-free particle topologies, strictly non-negative sparse firing, and inference-time Hebbian plasticity—can match Transformer scaling laws while offering native interpretability and up to 9× neuromorphic energy savings. **HatchlingLM** provides a clean, modular PyTorch implementation and complete neurobiological empirical evaluation suite for this architecture.
 
 <br>
 
@@ -845,6 +850,14 @@ Verifies: model tensor dimensions · non-negative biological firing constraints 
 ## 📚 Research Papers & Academic References
 
 <details open>
+<summary><b>🐉 Primary Architecture Paper: The Dragon Hatchling (BDH)</b></summary>
+
+- Kosowski, A., Uznański, P., Chorowski, J., Stamirowska, Z., & Bartoszkiewicz, M. (2025). *The Dragon Hatchling: The Missing Link between the Transformer and Models of the Brain.* arXiv preprint arXiv:2509.26507.
+  **[📄 arXiv:2509.26507](https://arxiv.org/abs/2509.26507)** · **[🌐 Research Blog](https://pathway.com/research/bdh)** · **[💻 Reference Code](https://github.com/pathwaycom/bdh)** · **[📄 DOI: 10.48550/arXiv.2509.26507](https://doi.org/10.48550/arXiv.2509.26507)**
+
+</details>
+
+<details open>
 <summary><b>🧬 Sparse Coding in Neocortex</b></summary>
 
 - Olshausen, B. A., & Field, D. J. (1996). *Emergence of simple-cell receptive field properties by learning a sparse code for natural images.* Nature, 381, 607–609.
@@ -925,7 +938,19 @@ Verifies: model tensor dimensions · non-negative biological firing constraints 
 
 This project is open-sourced under the **[MIT License](LICENSE)**.
 
+If you use HatchlingLM or the Dragon Hatchling architecture in your research, please cite both the primary paper and this implementation:
+
 ```bibtex
+@article{kosowski2025dragon,
+  title         = {The Dragon Hatchling: The Missing Link between the Transformer and Models of the Brain},
+  author        = {Adrian Kosowski and Przemys{\l}aw Uzna{\'n}ski and Jan Chorowski and Zuzanna Stamirowska and Micha{\l} Bartoszkiewicz},
+  year          = {2025},
+  eprint        = {2509.26507},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.NE},
+  url           = {https://arxiv.org/abs/2509.26507}
+}
+
 @misc{hatchlinglm2026,
   author       = {Aryan Kumar and HatchlingLM Contributors},
   title        = {HatchlingLM: Dragon Hatchling Architecture —
